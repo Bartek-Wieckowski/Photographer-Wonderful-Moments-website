@@ -7,6 +7,16 @@ toggle.addEventListener("click", () => {
   toggle.classList.toggle("toggleX");
 });
 
+// Removing hamburger menu after click
+const allLinks = document.querySelectorAll(".nav__link");
+
+const linkAction = function () {
+  const navMenu = document.querySelector(".nav--js");
+  navMenu.classList.remove("show-menu");
+  toggle.classList.remove("toggleX");
+};
+allLinks.forEach((n) => n.addEventListener("click", linkAction));
+
 // Get the modal
 const modal = document.querySelector(".modal");
 
@@ -112,3 +122,23 @@ form.onsubmit = (event) => {
     console.log("Form SUBMITTED");
   }
 };
+
+// DARK/LIGHT MODE
+let isDark = false;
+const themeBtn = document.getElementById("theme-button");
+const iconTheme = "bx-sun";
+
+themeBtn.addEventListener("click", () => {
+  themeBtn.classList.toggle(iconTheme);
+  if (isDark == true) {
+    document.documentElement.style.setProperty("--body-color", "#fff");
+    document.documentElement.style.setProperty("--dark-color", "#000");
+
+    isDark = false;
+  } else {
+    document.documentElement.style.setProperty("--body-color", "#000");
+    document.documentElement.style.setProperty("--dark-color", "#fff");
+
+    isDark = true;
+  }
+});
