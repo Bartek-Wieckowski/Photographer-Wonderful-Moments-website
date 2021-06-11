@@ -304,7 +304,74 @@ img {
 }
 
 /* --**HOME**-- */
+.home {
+  /* Chrome10+, Safari5.1+ */
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, from(#b24592), to(#f15f79));
+  background: linear-gradient(90deg, #b24592, #f15f79);
+}
+
+.home__container {
+  height: calc(100vh - var(--height));
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.home__img {
+  width: 300px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border-radius: 25%;
+}
+
+.home__data {
+  padding-top: 8rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.home__title {
+  padding-top: 5rem;
+}
+
+.home__subtitle {
+  margin-bottom: 1rem;
+}
+
+.wave {
+  background: var(--body-color);
+}
+
 /* --**BUTTONS**-- */
+.button {
+  display: inline-block;
+  background-color: #fff;
+  color: var(--title-color);
+  padding: 0.75rem 1rem;
+  border-radius: 0.3rem;
+  white-space: nowrap;
+}
+
+.button--home {
+  font-weight: var(--font-semi);
+  border-radius: 1.3rem;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.button--home:hover {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.button__icon--home {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+
 /* --**ABOUT**-- */
 /* --**Me*-- */
 /* --**CAMERA*-- */
@@ -315,9 +382,6 @@ img {
 /* --**MEDIA QUERIES**-- */
 /* For small devices reduce search*/
 @media screen and (min-width: 768px) {
-  body {
-    padding: 1rem 3rem 0 6rem;
-  }
   .header {
     padding: 0 3rem 0 6rem;
   }

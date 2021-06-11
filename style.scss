@@ -251,8 +251,60 @@ img {
 }
 
 /* --**HOME**-- */
+.home {
+    background: -webkit-linear-gradient(90deg, #b24592, #f15f79); /* Chrome10+, Safari5.1+ */
+    background: -moz-linear-gradient(90deg, #b24592, #f15f79); /* FF3.6+ */
+    background: linear-gradient(90deg, #b24592, #f15f79);
+    &__container {
+        height: calc(100vh - var(--height));
+        align-content: center;
+    }
+    &__img {
+        width: 300px;
+        justify-self: center;
+        border-radius: 25%;
+    }
+    &__data {
+        padding-top: 8rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    &__title {
+        padding-top: 5rem;
+    }
+    &__subtitle {
+        margin-bottom: 1rem;
+    }
+}
+.wave {
+    background: var(--body-color);
+}
 
 /* --**BUTTONS**-- */
+.button {
+    display: inline-block;
+    background-color: #fff;
+    color: var(--title-color);
+    padding: 0.75rem 1rem;
+    border-radius: 0.3rem;
+    white-space: nowrap;
+
+    &--home {
+        font-weight: var(--font-semi);
+        border-radius: 1.3rem;
+        transition: transform 0.3s;
+        &:hover {
+            transform: translateY(5px);
+        }
+    }
+    &__icon {
+        &--home {
+            font-size: 1.5rem;
+            vertical-align: middle;
+            margin-left: 1rem;
+        }
+    }
+}
 /* --**ABOUT**-- */
 /* --**Me*-- */
 /* --**CAMERA*-- */
@@ -272,9 +324,9 @@ img {
 // }
 
 @media screen and (min-width: 768px) {
-    body {
-        padding: 1rem 3rem 0 6rem;
-    }
+    // body {
+    //     // padding: 1rem 3rem 0 6rem;
+    // }
     .header {
         padding: 0 3rem 0 6rem;
         &__container {
