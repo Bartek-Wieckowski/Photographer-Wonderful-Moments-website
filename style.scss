@@ -130,6 +130,58 @@ img {
     display: grid;
     gap: 1.5rem;
 }
+.flex {
+    display: flex;
+    align-items: center;
+}
+/* --**HEADER**-- */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background: -webkit-linear-gradient(90deg, #b24592, #f15f79); /* Chrome10+, Safari5.1+ */
+    background: -moz-linear-gradient(90deg, #b24592, #f15f79); /* FF3.6+ */
+    background: linear-gradient(90deg, #b24592, #f15f79);
+    box-shadow: 0 1px 0 rgba(22, 8, 43, 0.1);
+    padding: 0 1rem;
+    z-index: var(--z-fixed);
+    &__img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    &__container {
+        justify-content: space-between;
+    }
+    &__logo {
+        display: none;
+        color: var(--title-color);
+    }
+    &__search {
+        display: flex;
+        padding: 0.4rem 0.75rem;
+        border-radius: 0.25rem;
+    }
+    &__input {
+        width: 100%;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.212);
+        &::placeholder {
+            font-family: var(--body-font);
+            color: var(--text-color);
+        }
+    }
+    &__icon,
+    &__toggle {
+        font-size: 1.2rem;
+    }
+    &__toggle {
+        color: var(--title-color);
+        cursor: pointer;
+    }
+}
 
 /* --**NAV**-- */
 
