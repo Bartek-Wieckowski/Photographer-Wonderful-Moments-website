@@ -152,7 +152,7 @@ const sr = ScrollReveal({
 sr.reveal(".home__data", { origin: "left", distance: "70px", delay: 500 });
 
 // imgs
-sr.reveal(".home__img, .about__img, .header__img", {
+sr.reveal(".home__img, .about__img", {
   origin: "top",
   distance: "90px",
   delay: 200,
@@ -164,4 +164,15 @@ sr.reveal(".camera__description, .contact__data", {
   distance: "190px",
   delay: 400,
   reset: false,
+});
+
+const srMobile = ScrollReveal({
+  duration: 2500,
+  reset: true,
+});
+srMobile.reveal(".header__img", {
+  origin: "top",
+  distance: "1px",
+  delay: 200,
+  mobile: false,
 });
