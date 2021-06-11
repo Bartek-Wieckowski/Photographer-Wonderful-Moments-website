@@ -142,3 +142,26 @@ themeBtn.addEventListener("click", () => {
     isDark = true;
   }
 });
+
+// SCROLL REVEAL ANIMATION
+const sr = ScrollReveal({
+  duration: 2500,
+  reset: true,
+});
+// data
+sr.reveal(".home__data", { origin: "left", distance: "70px", delay: 500 });
+
+// imgs
+sr.reveal(".home__img, .about__img, .header__img", {
+  origin: "top",
+  distance: "90px",
+  delay: 200,
+});
+
+// content
+sr.reveal(".camera__description, .contact__data", {
+  origin: "bottom",
+  distance: "190px",
+  delay: 400,
+  reset: false,
+});
