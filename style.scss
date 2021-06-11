@@ -607,6 +607,40 @@ img {
 }
 
 /* --**FOOTER**-- */
+.footer {
+    background-color: rgb(10, 10, 10);
+    padding: unset;
+    &__container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        row-gap: 2rem;
+        padding: 0 1.5rem;
+        justify-content: center;
+    }
+    &__logo {
+        color: var(--btn-color);
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-semi);
+    }
+    &__description {
+        display: block;
+        font-size: var(--small-font-size);
+        color: #fff;
+        margin: 0.25rem 0 var(--mb-3);
+    }
+    &__title {
+        font-size: var(--h2-font-size);
+        color: #fff;
+        margin-bottom: var(--mb-2);
+    }
+    &__link {
+        display: inline-block;
+        color: #fff;
+        margin-bottom: var(--mb-2);
+        &:hover {
+            color: var(--btn-color-alt);
+        }
+    }
+}
 
 /* --**MEDIA QUERIES**-- */
 
