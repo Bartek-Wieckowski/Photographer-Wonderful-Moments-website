@@ -360,6 +360,21 @@ img {
       justify-self: center;
 }
 
+/* --**CAMERA**-- */
+.camera__data {
+  text-align: center;
+}
+
+.camera__description {
+  padding: 0 1.5rem;
+}
+
+.camera__img {
+  width: 280px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
 /* --**BUTTONS**-- */
 .button {
   display: inline-block;

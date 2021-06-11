@@ -297,6 +297,19 @@ img {
     }
 }
 
+/* --**CAMERA**-- */
+.camera {
+    &__data {
+        text-align: center;
+    }
+    &__description {
+        padding: 0 1.5rem;
+    }
+    &__img {
+        width: 280px;
+        justify-self: center;
+    }
+}
 /* --**BUTTONS**-- */
 .button {
     display: inline-block;
