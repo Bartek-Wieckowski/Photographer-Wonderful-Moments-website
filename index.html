@@ -59,9 +59,16 @@
                     </li>
 
                     <li class="nav__items">
-                        <a href="" class="nav__link flex">
+                        <a href="#pictures" class="nav__link flex">
                             <i class='bx bx-images nav__icon'></i>
                             <span class="nav__name">Pictures</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__items">
+                        <a href="#opinion" class="nav__link flex">
+                            <i class='bx bx-message-rounded-check nav__icon'></i>
+                            <span class="nav__name">Opinion</span>
                         </a>
                     </li>
 
@@ -72,12 +79,6 @@
                         </a>
                     </li>
 
-                    <li class="nav__items">
-                        <a href="" class="nav__link flex">
-                            <i class='bx bx-current-location nav__icon'></i>
-                            <span class="nav__name">Location</span>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -148,7 +149,7 @@
         <section class="pictures section container" id="pictures">
             <div class="pictures__container grid">
                 <h2 class="section__title">MY LATEST WORK</h2>
-                <span class="section__subtitle pictures__subtitle">Click for each picture 👍</span>
+                <span class="section__subtitle ">Click for each picture 👍</span>
 
                 <ul class="gallery">
                     <li class="gallery-item">
@@ -200,6 +201,113 @@
                     <!-- Modal Content (The Image) -->
                     <img class="modal-content">
                 </div>
+        </section>
+
+        <!-- **--OPINION--** -->
+        <section class="opinion section" id="opinion">
+            <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.99 C150.00,150.00 271.49,-49.99 500.00,49.99 L500.00,0.00 L0.00,0.00 Z"
+                        style="stroke: none; fill: #fff;"></path>
+                </svg></div>
+            </svg></div>
+            <h2 class="section__title">Opinion</h2>
+            <span class="section__subtitle">My client saying</span>
+
+            <div class="opinion__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- OPINION 1-->
+                    <div class="opinion__content swiper-slide">
+                        <div class="opinion__data">
+                            <div class="opinion__header">
+                                <img src="img/person1.jpg" alt="" class="opinion__img">
+
+                                <div>
+                                    <h3 class="opinion__name">Laura Patterson</h3>
+                                    <span class="opinion__client">Client</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <i class='bx bx-star opinion__icon-star'></i>
+                                <i class='bx bx-star opinion__icon-star'></i>
+                                <i class='bx bx-star opinion__icon-star'></i>
+                                <i class='bx bx-star opinion__icon-star'></i>
+                                <i class='bx bx-star opinion__icon-star'></i>
+
+                            </div>
+                        </div>
+
+                        <p class="opinion__description">I got the pictures I wanted! My wedding was captured in every
+                            moment. I am happy and I can go back to my album every day.</p>
+
+                    </div>
+
+                    <!-- OPINION 2-->
+                    <div class="opinion__content swiper-slide">
+                        <div class="opinion__data">
+                            <div class="opinion__header">
+                                <img src="img/person2.jpg" alt="" class="opinion__img">
+
+                                <div>
+                                    <h3 class="opinion__name">Rich Fraser</h3>
+                                    <span class="opinion__client">Happy Father</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <i class='bx bx-star opinion__icon-star'></i>
+                                <i class='bx bx-star opinion__icon-star'></i>
+                                <i class='bx bx-star opinion__icon-star'></i>
+                                <i class='bx bx-star opinion__icon-star'></i>
+                                <i class='bx bx-star opinion__icon-star'></i>
+
+                            </div>
+                        </div>
+
+                        <p class="opinion__description">My son needed some cool shots during his soccer game, thanks to
+                            Patrick we have something to brag about!</p>
+
+                    </div>
+
+                    <!-- OPINION 3-->
+                    <div class="opinion__content swiper-slide">
+                        <div class="opinion__data">
+                            <div class="opinion__header">
+                                <img src="img/person3.jpg" alt="" class="opinion__img">
+
+                                <div>
+                                    <h3 class="opinion__name">Adam Traore</h3>
+                                    <span class="opinion__client">Friend</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <i class='bx bx-star opinion__icon-star'></i>
+                                <i class='bx bx-star opinion__icon-star'></i>
+                                <i class='bx bx-star opinion__icon-star'></i>
+                                <i class='bx bx-star opinion__icon-star'></i>
+                                <i class='bx bx-star opinion__icon-star'></i>
+
+                            </div>
+                        </div>
+
+                        <p class="opinion__description">For several years my friend has been able to capture the
+                            wonderful moments that happen in my family, our album is getting bigger and bigger with
+                            perfect pictures</p>
+
+                    </div>
+
+                </div>
+                <!-- add pagination -->
+                <div class="swiper-pagination swiper-pagination-opinion"></div>
+            </div>
+
+            <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #fff;"></path>
+                </svg></div>
         </section>
 
     </main>

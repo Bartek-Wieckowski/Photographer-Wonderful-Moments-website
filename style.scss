@@ -337,11 +337,6 @@ img {
 }
 
 /* --**PICTURES*-- */
-.pictures {
-    &__subtitle {
-        display: none;
-    }
-}
 
 .gallery {
     display: flex;
@@ -469,6 +464,49 @@ img {
 }
 
 /* --**OPINION*-- */
+.opinion {
+    padding: unset;
+    background: -webkit-linear-gradient(90deg, #b24592, #f15f79); /* Chrome10+, Safari5.1+ */
+    background: -moz-linear-gradient(90deg, #b24592, #f15f79); /* FF3.6+ */
+    background: linear-gradient(90deg, #b24592, #f15f79);
+    &__container {
+        padding: 1.5rem;
+    }
+    &__data,
+    &__header {
+        display: flex;
+    }
+    &__data {
+        justify-content: space-between;
+        margin-bottom: var(--mb-1);
+    }
+    &__img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+    }
+    &__name {
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-semi);
+    }
+    &__client {
+        font-size: var(--small-font-size);
+        color: var(--text-color);
+    }
+    &__description {
+        margin-bottom: var(--mb-2);
+        color: #fff;
+    }
+    &__icon-star {
+        color: yellow;
+    }
+}
+/* --**Swiper*-- */
+.swiper-pagination-bullet-active {
+    background-color: var(--title-color);
+}
+
 /* --**CONTACT*-- */
 /* --**FOOTER**-- */
 

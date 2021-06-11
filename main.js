@@ -37,3 +37,22 @@ document.addEventListener("keydown", function (e) {
     closeModal();
   }
 });
+
+// Opinion Swiper
+
+let swiperOpinion = new Swiper(".opinion__container", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 48,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    568: {
+      slidesPerView: 2,
+    },
+  },
+});

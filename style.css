@@ -406,10 +406,6 @@ img {
 }
 
 /* --**PICTURES*-- */
-.pictures__subtitle {
-  display: none;
-}
-
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,6 +559,62 @@ img {
 }
 
 /* --**OPINION*-- */
+.opinion {
+  padding: unset;
+  /* Chrome10+, Safari5.1+ */
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, from(#b24592), to(#f15f79));
+  background: linear-gradient(90deg, #b24592, #f15f79);
+}
+
+.opinion__container {
+  padding: 1.5rem;
+}
+
+.opinion__data, .opinion__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.opinion__data {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: var(--mb-1);
+}
+
+.opinion__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.opinion__name {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi);
+}
+
+.opinion__client {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+.opinion__description {
+  margin-bottom: var(--mb-2);
+  color: #fff;
+}
+
+.opinion__icon-star {
+  color: yellow;
+}
+
+/* --**Swiper*-- */
+.swiper-pagination-bullet-active {
+  background-color: var(--title-color);
+}
+
 /* --**CONTACT*-- */
 /* --**FOOTER**-- */
 /* --**MEDIA QUERIES**-- */
