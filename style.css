@@ -105,6 +105,8 @@ img {
 
 .section__title {
   font-size: var(--h1-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-semi);
 }
 
 .section__subtitle {
@@ -340,6 +342,22 @@ img {
 
 .wave {
   background: var(--body-color);
+}
+
+/* --**ABOUT**-- */
+.about__data {
+  text-align: center;
+}
+
+.about__description {
+  margin-bottom: var(--mb-3);
+  padding: 0 1.5rem;
+}
+
+.about__img {
+  width: 280px;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 /* --**BUTTONS**-- */

@@ -109,6 +109,8 @@ img {
     padding: 4rem 0 2rem;
     &__title {
         font-size: var(--h1-font-size);
+        color: var(--title-color);
+        font-weight: var(--font-semi);
     }
     &__subtitle {
         display: block;
@@ -278,6 +280,21 @@ img {
 }
 .wave {
     background: var(--body-color);
+}
+
+/* --**ABOUT**-- */
+.about {
+    &__data {
+        text-align: center;
+    }
+    &__description {
+        margin-bottom: var(--mb-3);
+        padding: 0 1.5rem;
+    }
+    &__img {
+        width: 280px;
+        justify-self: center;
+    }
 }
 
 /* --**BUTTONS**-- */
