@@ -136,6 +136,31 @@ img {
     display: flex;
     align-items: center;
 }
+/* --**BUTTONS**-- */
+.button {
+    display: inline-block;
+    background-color: #fff;
+    color: var(--title-color);
+    padding: 0.75rem 1rem;
+    border-radius: 0.3rem;
+    white-space: nowrap;
+
+    &--home {
+        font-weight: var(--font-semi);
+        border-radius: 1.3rem;
+        transition: transform 0.3s;
+        &:hover {
+            transform: translateY(5px);
+        }
+    }
+    &__icon {
+        &--home {
+            font-size: 1.5rem;
+            vertical-align: middle;
+            margin-left: 1rem;
+        }
+    }
+}
 /* --**HEADER**-- */
 .header {
     position: fixed;
@@ -310,48 +335,144 @@ img {
         justify-self: center;
     }
 }
-/* --**BUTTONS**-- */
-.button {
-    display: inline-block;
-    background-color: #fff;
-    color: var(--title-color);
-    padding: 0.75rem 1rem;
-    border-radius: 0.3rem;
-    white-space: nowrap;
 
-    &--home {
-        font-weight: var(--font-semi);
-        border-radius: 1.3rem;
-        transition: transform 0.3s;
-        &:hover {
-            transform: translateY(5px);
+/* --**PICTURES*-- */
+.pictures {
+    &__subtitle {
+        display: none;
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+
+    &-item {
+        text-align: center;
+        height: 40vh;
+        flex-grow: 1;
+        &:last-child {
+            flex-grow: 10;
         }
     }
-    &__icon {
-        &--home {
-            font-size: 1.5rem;
-            vertical-align: middle;
-            margin-left: 1rem;
+    &-img {
+        max-height: 100%;
+        max-width: 300px;
+        object-fit: cover;
+        vertical-align: bottom;
+        cursor: pointer;
+    }
+}
+
+// Portrait
+
+@media (max-aspect-ratio: 1/1) {
+    .gallery-item {
+        height: 30vh;
+    }
+}
+
+// Short screens
+
+@media (max-height: 480px) {
+    .gallery-item {
+        height: 80vh;
+    }
+}
+
+// Smaller screens in portrait
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    .gallery {
+        flex-direction: row;
+
+        &-item {
+            height: auto;
+            width: 100%;
+        }
+        &-img {
+            width: 100%;
+            max-height: 75vh;
+            min-width: 0;
+            margin-bottom: 3rem;
         }
     }
 }
-/* --**ABOUT**-- */
-/* --**Me*-- */
-/* --**CAMERA*-- */
-/* --**LATEST WORK*-- */
+/* --**Gallery**-- */
+.gallery-img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+/* --**Modal-background**-- */
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* --**Modal-content(img)*-- */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 85%;
+    max-width: 1444px;
+    position: relative;
+    top: 150px;
+}
+
+/* --**Animation- Zoom in the Modal-- */
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+/* --**Close btn-- */
+.close {
+    position: absolute;
+    top: 155px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* --**OPINION*-- */
 /* --**CONTACT*-- */
 /* --**FOOTER**-- */
 
 /* --**MEDIA QUERIES**-- */
-/* For small devices reduce search*/
-// @media screen and (max-width: 320px) {
-//     .header {
-//         &__search {
-//             width: 70%;
-//         }
-//     }
-// }
 
 @media screen and (min-width: 768px) {
     // body {
@@ -407,5 +528,12 @@ img {
         &:hover &__name {
             opacity: 1;
         }
+    }
+    .modal-content {
+        position: unset;
+        top: unset;
+    }
+    .close {
+        top: 205px;
     }
 }
