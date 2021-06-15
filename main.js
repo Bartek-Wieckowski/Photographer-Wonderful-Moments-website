@@ -28,11 +28,13 @@ const closeX = document.querySelector(".close");
 const showModal = function () {
   modal.style.display = "block";
   modalImg.src = this.src;
+  document.body.classList.add("stop-scrolling");
 };
 
 // Close X Modal
 const closeModal = function () {
   modal.style.display = "none";
+  document.body.classList.remove("stop-scrolling");
 };
 
 // Event Handler
@@ -165,7 +167,7 @@ sr.reveal(".camera__description, .contact__data", {
 
 const srMobile = ScrollReveal({
   duration: 2500,
-  reset: true,
+  reset: false,
 });
 srMobile.reveal(".header__img", {
   origin: "top",

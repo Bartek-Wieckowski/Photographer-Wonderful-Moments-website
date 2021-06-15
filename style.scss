@@ -468,6 +468,10 @@ img {
     text-decoration: none;
     cursor: pointer;
 }
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
 
 /* --**OPINION*-- */
 .opinion {
@@ -704,12 +708,12 @@ img {
     opacity: 0;
 }
 .active .icon2 {
-    transform: translateX(calc(54px + 30px));
+    transform: translateY(calc(10px + 30px));
     transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
     box-shadow: #000 0px 0px 10px;
 }
 .active .icon3 {
-    transform: translateX(calc(-54px + -30px));
+    transform: translateY(calc(-14px + -30px));
     transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
     box-shadow: #000 0px 0px 10px;
 }
@@ -725,7 +729,7 @@ img {
 }
 .social-object {
     position: fixed;
-    right: -2.5rem;
+    right: -7.5rem;
     bottom: -100px;
 
     margin: auto;
@@ -788,9 +792,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-    // body {
-    //     // padding: 1rem 3rem 0 6rem;
-    // }
     .header {
         padding: 0 3rem 0 6rem;
         &__container {
@@ -859,5 +860,22 @@ img {
     }
     .close {
         top: 205px;
+    }
+    /* --**SOCIAL ICONS**-- */
+
+    .active .icon2 {
+        transform: translateX(calc(54px + 30px));
+    }
+    .active .icon3 {
+        transform: translateX(calc(-54px + -30px));
+    }
+    .active .icon4 {
+        transform: translateY(calc(54px + 30px));
+    }
+    .active .icon5 {
+        transform: translateY(calc(-54px + -30px));
+    }
+    .social-object {
+        right: -2.5rem;
     }
 }
