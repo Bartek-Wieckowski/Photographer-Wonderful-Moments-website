@@ -205,7 +205,7 @@ const rootElement = document.documentElement;
 const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
 
 const showIcon = function () {
-  if (rootElement.scrollTop / scrollTotal > 1.25) {
+  if (rootElement.scrollTop / scrollTotal > 1.2) {
     icon.classList.add("show-icon");
   } else {
     icon.classList.remove("show-icon");
