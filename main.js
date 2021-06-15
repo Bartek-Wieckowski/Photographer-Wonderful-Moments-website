@@ -14,6 +14,7 @@ const linkAction = function () {
   const navMenu = document.querySelector(".nav--js");
   navMenu.classList.remove("show-menu");
   toggle.classList.remove("toggleX");
+  closeModal();
 };
 allLinks.forEach((n) => n.addEventListener("click", linkAction));
 
@@ -199,9 +200,11 @@ const iconAction = function () {
 allIconSocial.forEach((n) => n.addEventListener("click", iconAction));
 
 // show icon only in footer
+const rootElement = document.documentElement;
+const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
 
 const showIcon = function () {
-  if (this.scrollY >= 4060) {
+  if (rootElement.scrollTop / scrollTotal > 1.25) {
     icon.classList.add("show-icon");
   } else {
     icon.classList.remove("show-icon");
