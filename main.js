@@ -176,3 +176,39 @@ srMobile.reveal(".header__img", {
   delay: 200,
   mobile: false,
 });
+
+// social icon
+
+const icon = document.querySelector(".icon1");
+const socialObject = document.querySelector(".social-object");
+const moveIcon = document.querySelectorAll(".mov-icon");
+
+icon.addEventListener("click", () => {
+  socialObject.classList.toggle("active");
+
+  moveIcon.forEach((el) => {
+    el.classList.add("showOpacity");
+  });
+});
+
+// removing after click icon
+const allIconSocial = document.querySelectorAll(".icon-social");
+
+const iconAction = function () {
+  socialObject.classList.remove("active");
+};
+allIconSocial.forEach((n) => n.addEventListener("click", iconAction));
+
+// show icon only in footer
+
+const showIcon = function () {
+  if (this.scrollY >= 4060) {
+    icon.classList.add("show-icon");
+  } else {
+    icon.classList.remove("show-icon");
+    moveIcon.forEach((el) => {
+      el.classList.remove("showOpacity");
+    });
+  }
+};
+window.addEventListener("scroll", showIcon);
