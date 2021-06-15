@@ -87,10 +87,7 @@ form.onsubmit = (event) => {
   }
   // After 400ms there will be a shake effect again, when inputs still fill wrong
   setTimeout(() => {
-    firstNField.classList.remove("shake");
-    lastNField.classList.remove("shake");
     emailField.classList.remove("shake");
-    passwordField.classList.remove("shake");
   }, 400);
 
   //   email verification
