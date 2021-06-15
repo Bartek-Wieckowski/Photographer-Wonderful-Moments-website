@@ -1,11 +1,11 @@
 
-# My own design responsive website
+# My OWN DESIGN and RESPONSIVE WEBISTE
 
 ![Few screenshots](/img/screenPreview1.png)
 ![Few screenshots](/img/screenPreview2.png)
-(/img/screenPreview3.png)
-(/img/screenPreview4.png)
-(/img/screenPreview5.png)
+![Few screenshots]![Few screenshots]![Few screenshots](/img/screenPreview3.png)
+![Few screenshots]![Few screenshots](/img/screenPreview4.png)
+![Few screenshots](/img/screenPreview5.png)
 
 ## Welcome! 👋
 
