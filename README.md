@@ -2,7 +2,7 @@
 # My own design responsive website
 
 ![Few screenshots](/img/screenPreview1.png)
-(/img/screenPreview2.png)
+![Few screenshots](/img/screenPreview2.png)
 (/img/screenPreview3.png)
 (/img/screenPreview4.png)
 (/img/screenPreview5.png)
