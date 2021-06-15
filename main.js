@@ -132,11 +132,11 @@ themeBtn.addEventListener("click", () => {
   themeBtn.classList.toggle(iconTheme);
   if (isDark == true) {
     document.documentElement.style.setProperty("--body-color", "#fff");
-    document.documentElement.style.setProperty("--dark-color", "#000");
+    document.documentElement.style.setProperty("--dark-color", "#20262b");
 
     isDark = false;
   } else {
-    document.documentElement.style.setProperty("--body-color", "#000");
+    document.documentElement.style.setProperty("--body-color", "#20262b");
     document.documentElement.style.setProperty("--dark-color", "#fff");
 
     isDark = true;

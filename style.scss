@@ -13,7 +13,7 @@
     --text-color: #5b5757;
     --body-color: #fff;
     --container-color: #8f8a8a;
-    --dark-color: #000;
+    --dark-color: #20262b;
     color: #fff;
 
     //font and typography
@@ -311,9 +311,6 @@ img {
         margin-bottom: 1rem;
     }
 }
-.wave {
-    background: var(--body-color);
-}
 
 /* --**ABOUT**-- */
 .about {
@@ -327,6 +324,7 @@ img {
     &__img {
         width: 280px;
         justify-self: center;
+        border-radius: 1rem;
     }
 }
 
@@ -649,6 +647,12 @@ img {
         &:hover {
             color: var(--btn-color-alt);
         }
+    }
+}
+.wave {
+    & path {
+        stroke: none;
+        fill: var(--body-color);
     }
 }
 

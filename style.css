@@ -9,7 +9,7 @@
   --text-color: #5b5757;
   --body-color: #fff;
   --container-color: #8f8a8a;
-  --dark-color: #000;
+  --dark-color: #20262b;
   color: #fff;
   --body-font: "Raleway", sans-serif;
   --biggest-font-size: 3.5rem;
@@ -379,10 +379,6 @@ img {
   margin-bottom: 1rem;
 }
 
-.wave {
-  background: var(--body-color);
-}
-
 /* --**ABOUT**-- */
 .about__data {
   text-align: center;
@@ -397,6 +393,7 @@ img {
   width: 280px;
   -ms-grid-column-align: center;
       justify-self: center;
+  border-radius: 1rem;
 }
 
 /* --**CAMERA**-- */
@@ -815,6 +812,11 @@ img {
 
 .footer__link:hover {
   color: var(--btn-color-alt);
+}
+
+.wave path {
+  stroke: none;
+  fill: var(--body-color);
 }
 
 /* --**MEDIA QUERIES**-- */
