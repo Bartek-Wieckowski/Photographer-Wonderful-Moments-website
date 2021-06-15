@@ -78,7 +78,7 @@ const form = document.querySelector(".form");
 const emailField = document.querySelector(".email");
 const emailInput = emailField.querySelector("input");
 
-// form - many actions after wrong filling - empty inputs
+// Form - many actions after wrong filling - empty inputs
 
 form.onsubmit = (event) => {
   event.preventDefault();
@@ -93,7 +93,7 @@ form.onsubmit = (event) => {
     emailField.classList.remove("shake");
   }, 400);
 
-  //   email verification
+  // Email verification
 
   function checkEmail() {
     let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
@@ -116,7 +116,7 @@ form.onsubmit = (event) => {
     checkEmail();
   };
 
-  // validation when the form will be sent
+  // Validation when the form will be sent
   if (!emailField.classList.contains("error")) {
     window.location.href = "#";
     console.log("Form SUBMITTED");
@@ -166,6 +166,7 @@ sr.reveal(".camera__description, .contact__data", {
   reset: false,
 });
 
+// header logo
 const srMobile = ScrollReveal({
   duration: 2500,
   reset: false,
@@ -177,7 +178,7 @@ srMobile.reveal(".header__img", {
   mobile: false,
 });
 
-// social icon
+// Social icon
 
 const icon = document.querySelector(".icon1");
 const socialObject = document.querySelector(".social-object");
@@ -191,7 +192,7 @@ icon.addEventListener("click", () => {
   });
 });
 
-// removing after click icon
+// Removing after click icon
 const allIconSocial = document.querySelectorAll(".icon-social");
 
 const iconAction = function () {
@@ -199,7 +200,7 @@ const iconAction = function () {
 };
 allIconSocial.forEach((n) => n.addEventListener("click", iconAction));
 
-// show icon only in footer
+// Show icon only in footer
 const rootElement = document.documentElement;
 const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
 

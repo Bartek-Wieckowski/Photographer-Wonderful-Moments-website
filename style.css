@@ -10,7 +10,6 @@
   --body-color: #fff;
   --container-color: #8f8a8a;
   --dark-color: #20262b;
-  color: #fff;
   --body-font: "Raleway", sans-serif;
   --biggest-font-size: 3.5rem;
   --big-font-size: 3rem;
@@ -642,6 +641,11 @@ img {
   background-color: var(--title-color);
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  gap: 0;
 }
 
 .form .field .input-area {
@@ -733,6 +737,7 @@ img {
   border-color: #dc3545;
 }
 
+/* --**Animation shake-error*-- */
 @-webkit-keyframes shake {
   0%,
   100% {
@@ -747,7 +752,6 @@ img {
     margin-left: 12px;
   }
 }
-
 @keyframes shake {
   0%,
   100% {
@@ -819,7 +823,7 @@ img {
   color: var(--btn-color-alt);
 }
 
-/* --**sVG waves**-- */
+/* --**SVG waves**-- */
 .wave path {
   stroke: none;
   fill: var(--body-color);
@@ -1081,7 +1085,6 @@ img {
   .close {
     top: 205px;
   }
-  /* --**SOCIAL ICONS**-- */
   .active .icon2 {
     -webkit-transform: translateX(calc(54px + 30px));
             transform: translateX(calc(54px + 30px));
